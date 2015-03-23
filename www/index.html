@@ -29,21 +29,6 @@
       </ion-header-bar>
       <ion-content>
 
-<div class="tabs tabs-icon-top">
-  <a class="tab-item">
-    <i class="icon ion-home"></i>
-    Home
-  </a>
-  <a class="tab-item">
-    <i class="icon ion-star"></i>
-    Favorites
-  </a>
-  <a class="tab-item">
-    <i class="icon ion-gear-a"></i>
-    Settings
-  </a>
-</div>
-
 
 <div class="list">
 
@@ -61,41 +46,72 @@
 <div class="list card">
 
   <div class="item item-avatar">
-    <img src="img\cat.jpg">
-    <h2>Marty McFly</h2>
-    <p>November 05, 1955</p>
+    <img src="http://www.averagebetty.com/images_2012/buffalo_chicken_leg_600.jpg">
+    <h2>Chicken</h2>
+    <p>Calories:172</p>
   </div>
 
-  <div class="item item-body">
-    <img class="full-image" src="http://ionicframework.com/img/docs/delorean.jpg">
-    <p>
-      This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-      the content is from a card-body consisting of an image and paragraph text. The footer
-      consists of tabs, icons aligned left, within the card-footer.
-    </p>
-    <p>
-      <a href="#" class="subdued">1 Like</a>
-      <a href="#" class="subdued">5 Comments</a>
-    </p>
-  </div>
-
-  <div class="item tabs tabs-secondary tabs-icon-left">
-    <a class="tab-item" href="#">
-      <i class="icon ion-thumbsup"></i>
-      Like
-    </a>
-    <a class="tab-item" href="#">
-      <i class="icon ion-chatbox"></i>
-      Comment
-    </a>
-    <a class="tab-item" href="#">
-      <i class="icon ion-share"></i>
-      Share
-    </a>
-  </div>
-
+<div>
+<center>
+<h2>
+	<div id="myLife">
+Your current calories:0
 </div>
-      </ion-content>
-    </ion-pane>
+</center>
+</h2>
+</div>
+
+
+<div class="item item-body">
+    <img src="http://www.averagebetty.com/images_2012/buffalo_chicken_leg_600.jpg">
+    <p>
+      Nutrition Facts
+Chicken, breast
+Amount Per 100 grams
+Calories 172
+% Daily Value*
+Total Fat 9 g	13%
+Saturated fat 2.7 g	13%
+Polyunsaturated fat 2 g	
+Monounsaturated fat 3.8 g	
+Trans fat 0.1 g	
+Cholesterol 64 mg	21%
+Sodium 63 mg	2%
+Potassium 220 mg	6%
+Total Carbohydrate 0 g	0%
+Dietary fiber 0 g	0%
+Sugar 0 g	
+Protein 21 g	42%
+Vitamin A	1%	Vitamin C	0%
+Calcium	1%	Iron	3%
+Vitamin D	4%	Vitamin B-6	25%
+Vitamin B-12	5%	Magnesium	6%
+*Per cent Daily Values are based on a 2,000 calorie diet. Your daily values may be higher or lower depending on your calorie needs.
+    </p>
+</div>
+<div> 
+	<center>
+		<a class="button button-positive" onclick="incDec('+172')">
+		+172
+		</a>
+</div>
+</ion-content>
+</ion-pane>
+
+
+<script type="text/javascript">
+
+	function incDec(plusMinus) {
+	
+	var plusMinus = parseInt (plusMinus);
+	var currentLife = parseInt(document.getElementById("myLife").innerHT
+		ML)+plusMinus;
+		
+		document.getElementById("myLife").innerHTML = currentLife;
+		
+		
+		}
+</script>  
+     
   </body>
 </html>
